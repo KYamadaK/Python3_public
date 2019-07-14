@@ -15,4 +15,5 @@ ekidata = []
 for i in root.findall('./station/*'):
 	ekidata.append(i.text)
 
-print(ekidata)
+ekidata_csv = ",".join(map(str,ekidata))
+print(ekidata_csv)
