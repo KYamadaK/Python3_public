@@ -22,5 +22,4 @@ for i in root.findall('./ADDRESS_value/*'):
 zipcode_head_csv = ",".join(map(str,zipcode_head))
 zipcode_csv = ",".join(map(str,zipcode))
 
-print(zipcode_head_csv)
-print(zipcode_csv)
+print(zipcode_head_csv+zipcode_csv)
